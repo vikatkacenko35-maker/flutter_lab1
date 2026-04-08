@@ -44,12 +44,12 @@ void addCommand(TodoRepository repo, String input) {
 }
 
 void listCommand(TodoRepository repo) {
-  List<Todo> _todos = repo.getAll();
-  if (_todos.isEmpty) {
+  List<Todo> todos = repo.getAll();
+  if (todos.isEmpty) {
     print("список задач пуст");
     return;
   }
-  for (var todo in _todos) {
+  for (var todo in todos) {
     print(todo);
   }
 }
