@@ -24,8 +24,8 @@ class TodoRepository {
     throw ArgumentError("Задача с таким id he найдена");
   }
 
-  void Delete(int id){
-    for(int i = 0, i < _todos.length; i++){
+  void delete(int id){
+    for(int i = 0; i < _todos.length; i++){
       if(_todos[i].id == id){
         _todos.removeAt(i);
         return;
